@@ -1,8 +1,8 @@
 ---
 - name:  Windows Update
   hosts: all
-  connection: winrm
-  gather_facts: false
+ 
+  gather_facts: true
   tasks:
     - name: Running Windows Update
       win_updates:
